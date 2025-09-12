@@ -1,0 +1,63 @@
+/* Tables */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-lg);
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.data-table th,
+.data-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  background-color: var(--background-color);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.data-table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.page-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius-md);
+  background-color: var(--card-bg-color);
+  color: var(--text-light);
+  font-weight: 500;
+  transition: all var(--transition-speed);
+  cursor: pointer;
+}
+
+.page-item:hover {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.page-item.active {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}

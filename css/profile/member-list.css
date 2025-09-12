@@ -1,0 +1,140 @@
+.member-list-container {
+  padding: var(--spacing-lg);
+}
+
+.member-cards {
+  display: grid;
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.member-card {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+}
+
+.member-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.member-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.member-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.label {
+  color: var(--text-light);
+  min-width: 200px;
+}
+
+.value {
+  color: var(--text-dark);
+}
+
+.permission-badge {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--background-color);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.permission-badge.manager {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+.bazar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-grow: 1;
+}
+
+.bazar-btn {
+  flex-grow: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--background-color);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+.icon-btn.delete {
+  color: var(--danger-color);
+}
+
+.remove-btn {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .member-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .label {
+    min-width: auto;
+  }
+
+  .bazar-actions {
+    width: 100%;
+  }
+}

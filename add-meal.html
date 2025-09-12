@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Meal - Meal Management Dashboard</title>
+  <link rel="stylesheet" href="css/add-meal/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo">
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="nav-item">
+            <a href="dashboard.html"><i class="fas fa-th-large"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-user-plus"></i> Add Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-coins"></i> Add Deposit</a>
+          </li>
+          <li class="nav-item active">
+            <a href="add-meal.html"><i class="fas fa-utensils"></i> Add Meal</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-receipt"></i> Add Cost</a>
+          </li>
+          <li class="nav-item">
+            <a href="active-month.html"><i class="fas fa-calendar-alt"></i> Active Month Details</a>
+          </li>
+          <li class="nav-item">
+            <a href="all-members.html"><i class="fas fa-users"></i> All Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-cog"></i> Options</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-profile">
+        <div class="avatar">
+          <img src="https://via.placeholder.com/40" alt="User Avatar">
+        </div>
+        <div class="user-info">
+          <p>Manager</p>
+          <span class="user-role">G</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="fas fa-th"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-home"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-question-circle"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-sync-alt"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="user-profile-top">
+          <span>Arman</span>
+          <a href="profile.html">
+          <div class="avatar">
+            <img src="assets/profile.jpeg" alt="User Avatar">
+          </div>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Meal Form Content -->
+      <div class="meal-form-container">
+        <div class="meal-tabs">
+          <button class="tab-btn active">For All Member</button>
+          <button class="tab-btn">For Single Member</button>
+          <button class="tab-btn">Meal Request</button>
+        </div>
+
+        <div class="default-meal-card">
+          <div class="card-header">
+            <h3>Current Default meal</h3>
+            <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+          </div>
+          <p class="meal-info">breakfast: 0, lunch: 0, dinner: 0</p>
+        </div>
+
+        <div class="date-picker">
+          <label>Select Date</label>
+          <input type="date" value="2025-04-05">
+        </div>
+
+        <div class="member-meal-list">
+          <!-- Member 1 -->
+          <div class="member-meal-card">
+            <div class="member-info">
+              <img src="assets/profile.jpeg" alt="Arman" class="member-avatar">
+              <span class="member-name">Arman</span>
+              <span class="total-meals">Total: 0</span>
+            </div>
+            <div class="meal-inputs">
+              <div class="meal-input-group">
+                <label>breakfast</label>
+                <input type="number" value="0">
+              </div>
+              <div class="meal-input-group">
+                <label>lunch</label>
+                <input type="number" value="0">
+              </div>
+              <div class="meal-input-group">
+                <label>dinner</label>
+                <input type="number" value="0">
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="member-meal-card">
+            <div class="member-info">
+              <img src="assets/profile.jpeg" alt="raihan1" class="member-avatar">
+              <span class="member-name">raihan1</span>
+              <span class="total-meals">Total: 0</span>
+            </div>
+            <div class="meal-inputs">
+              <div class="meal-input-group">
+                <label>breakfast</label>
+                <input type="number" value="0">
+              </div>
+              <div class="meal-input-group">
+                <label>lunch</label>
+                <input type="number" value="0">
+              </div>
+              <div class="meal-input-group">
+                <label>dinner</label>
+                <input type="number" value="0">
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="member-meal-card">
+            <div class="member-info">
+              <img src="assets/profile.jpeg" alt="farhan2" class="member-avatar">
+              <span class="member-name">farhan2</span>
+              <span class="total-meals">Total: 0</span>
+            </div>
+            <div class="meal-inputs">
+              <div class="meal-input-group">
+                <label>breakfast</label>
+                <input type="number" value="0">
+              </div>
+              <div class="meal-input-group">
+                <label>lunch</label>
+                <input type="number" value="0">
+              </div>
+              <div class="meal-input-group">
+                <label>dinner</label>
+                <input type="number" value="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

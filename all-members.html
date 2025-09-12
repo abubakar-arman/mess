@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Members - Meal Management Dashboard</title>
+  <link rel="stylesheet" href="css/all-members/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo">
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="nav-item">
+            <a href="dashboard.html"><i class="fas fa-th-large"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-user-plus"></i> Add Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-coins"></i> Add Deposit</a>
+          </li>
+          <li class="nav-item">
+            <a href="add-meal.html"><i class="fas fa-utensils"></i> Add Meal</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-receipt"></i> Add Cost</a>
+          </li>
+          <li class="nav-item">
+            <a href="active-month.html"><i class="fas fa-calendar-alt"></i> Active Month Details</a>
+          </li>
+          <li class="nav-item active">
+            <a href="all-members.html"><i class="fas fa-users"></i> All Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-cog"></i> Options</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-profile">
+        <div class="avatar">
+          <img src="https://via.placeholder.com/40" alt="User Avatar">
+        </div>
+        <div class="user-info">
+          <p>Manager</p>
+          <span class="user-role">G</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="fas fa-th"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-home"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-question-circle"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-sync-alt"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="user-profile-top">
+          <span>Arman</span>
+          <a href="profile.html">
+          <div class="avatar">
+            <img src="assets/profile.jpeg" alt="User Avatar">
+          </div>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Member List -->
+      <div class="member-list-container">
+        <div class="member-cards">
+          <!-- Member 1 -->
+          <div class="member-card">
+            <div class="member-header">
+              <img src="assets/profile.jpeg" alt="Member Avatar" class="member-avatar">
+              <h3 class="member-name">Arman (You)</h3>
+            </div>
+            <div class="member-details">
+              <div class="detail-row">
+                <span class="label">Email:</span>
+                <span class="value">bdcybergang1@gmail.com</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Member Special Permissions</span>
+                <div class="permission-badge manager">Manager</div>
+                <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+              </div>
+              <div class="detail-row">
+                <span class="label">Bazar Dates</span>
+                <div class="bazar-actions">
+                  <button class="bazar-btn">বাজার ডেট সেট করা হয় নি</button>
+                  <button class="icon-btn edit"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="icon-btn delete"><i class="fas fa-trash"></i></button>
+                </div>
+              </div>
+              <button class="remove-btn">Remove Member</button>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="member-card">
+            <div class="member-header">
+              <img src="assets/profile.jpeg" alt="Member Avatar" class="member-avatar">
+              <h3 class="member-name">raihan1</h3>
+            </div>
+            <div class="member-details">
+              <div class="detail-row">
+                <span class="label">Email:</span>
+                <span class="value">asdfasdf@mm.app</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Member Special Permissions</span>
+                <div class="permission-badge">No Permission</div>
+                <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+              </div>
+              <div class="detail-row">
+                <span class="label">Bazar Dates</span>
+                <div class="bazar-actions">
+                  <button class="bazar-btn">বাজার ডেট সেট করা হয় নি</button>
+                  <button class="icon-btn edit"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="icon-btn delete"><i class="fas fa-trash"></i></button>
+                </div>
+              </div>
+              <button class="remove-btn">Remove Member</button>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="member-card">
+            <div class="member-header">
+              <img src="assets/profile.jpeg" alt="Member Avatar" class="member-avatar">
+              <h3 class="member-name">farhan2</h3>
+            </div>
+            <div class="member-details">
+              <div class="detail-row">
+                <span class="label">Email:</span>
+                <span class="value">asdfjkl@mm.app</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Member Special Permissions</span>
+                <div class="permission-badge">No Permission</div>
+                <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+              </div>
+              <div class="detail-row">
+                <span class="label">Bazar Dates</span>
+                <div class="bazar-actions">
+                  <button class="bazar-btn">বাজার ডেট সেট করা হয় নি</button>
+                  <button class="icon-btn edit"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="icon-btn delete"><i class="fas fa-trash"></i></button>
+                </div>
+              </div>
+              <button class="remove-btn">Remove Member</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

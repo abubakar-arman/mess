@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Meal Management Dashboard</title>
+  <link rel="stylesheet" href="css/profile/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo">
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="nav-item active">
+            <a href="dashboard.html"><i class="fas fa-th-large"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-user-plus"></i> Add Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-coins"></i> Add Deposit</a>
+          </li>
+          <li class="nav-item">
+            <a href="add-meal.html"><i class="fas fa-utensils"></i> Add Meal</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-receipt"></i> Add Cost</a>
+          </li>
+          <li class="nav-item">
+            <a href="active-month.html"><i class="fas fa-calendar-alt"></i> Active Month Details</a>
+          </li>
+          <li class="nav-item">
+            <a href="all-members.html"><i class="fas fa-users"></i> All Member</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-cog"></i> Options</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-profile">
+        <div class="avatar">
+          <img src="https://via.placeholder.com/40" alt="User Avatar">
+        </div>
+        <div class="user-info">
+          <p>Manager</p>
+          <span class="user-role">G</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="fas fa-th"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-home"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-question-circle"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-sync-alt"></i></a>
+          <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="user-profile-top">
+          <span>Arman</span>
+          <a href="profile.html">
+          <div class="avatar">
+            <img src="assets/profile.jpeg" alt="User Avatar">
+          </div>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Profile Content -->
+      <div class="profile-container">
+        <div class="profile-header">
+          <img src="https://i.pravatar.cc/150?img=17" alt="Arman" class="profile-avatar">
+          <h2>Arman</h2>
+          <a href="#" class="view-posts">View Your All Post</a>
+        </div>
+
+        <div class="profile-section">
+          <h3>Your Info</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>Email: bdcybergang1@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <span>Phone: Not Set Yet</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-venus-mars"></i>
+              <span>Gender: male</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Address: BD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h3>Coins & Membership</h3>
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fas fa-box"></i>
+              <span>Package: Free</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-coins"></i>
+              <span>Points: 0</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-star"></i>
+              <span>Earn Free Points (max 500 point)</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-crown"></i>
+              <a href="#" class="action-link">Get/Renew Pro Membership</a>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-info-circle"></i>
+              <a href="#" class="action-link">View Membership Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h3>Referral Code</h3>
+          <div class="referral-code">
+            <i class="fas fa-gift"></i>
+            <span>01hM4PW0WDGGFKVKEA1DEYJQHM</span>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h3>Account Settings</h3>
+          <div class="settings-list">
+            <a href="#" class="settings-item">
+              <i class="fas fa-user-edit"></i>
+              <span>Change Basic Information</span>
+            </a>
+            <a href="#" class="settings-item">
+              <i class="fas fa-envelope"></i>
+              <span>Change Email</span>
+            </a>
+            <a href="#" class="settings-item">
+              <i class="fas fa-lock"></i>
+              <span>Change Password</span>
+            </a>
+          </div>
+        </div>
+
+        <button class="logout-btn">Logout</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

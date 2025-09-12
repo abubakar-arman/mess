@@ -1,0 +1,101 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Main Styles */
+@import 'variables.css';
+@import 'layout.css';
+@import 'sidebar.css';
+@import 'cards.css';
+@import 'tables.css';
+@import 'utilities.css';
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  
+  .left-panel {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .right-panel {
+    width: 100%;
+  }
+  
+  .info-cards {
+    flex-wrap: wrap;
+  }
+  
+  .info-card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 60px 1fr;
+  }
+  
+  .sidebar {
+    width: 60px;
+  }
+  
+  .sidebar .logo-container {
+    padding: 15px 0;
+  }
+  
+  .sidebar-nav ul li a span {
+    display: none;
+  }
+  
+  .sidebar-nav ul li a i {
+    margin-right: 0;
+  }
+  
+  .user-info {
+    display: none;
+  }
+  
+  .info-card {
+    width: 100%;
+  }
+  
+  .member-card {
+    flex-direction: column;
+  }
+  
+  .member-details {
+    flex-direction: column;
+  }
+  
+  .detail-col {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

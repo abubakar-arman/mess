@@ -1,0 +1,132 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-header h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.view-posts {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.profile-section {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+}
+
+.profile-section h3 {
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--text-light);
+}
+
+.info-item i {
+  width: 20px;
+  color: var(--primary-color);
+}
+
+.action-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.referral-code {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-light);
+}
+
+.referral-code i {
+  color: var(--primary-color);
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--text-light);
+  text-decoration: none;
+  padding: var(--spacing-sm) 0;
+  transition: color var(--transition-speed);
+}
+
+.settings-item:hover {
+  color: var(--primary-color);
+}
+
+.settings-item i {
+  width: 20px;
+  color: var(--primary-color);
+}
+
+.logout-btn {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity var(--transition-speed);
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: var(--spacing-md);
+  }
+  
+  .profile-section {
+    padding: var(--spacing-md);
+  }
+}

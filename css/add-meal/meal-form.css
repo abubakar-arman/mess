@@ -1,0 +1,165 @@
+.meal-form-container {
+  padding: var(--spacing-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meal-tabs {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.tab-btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: none;
+  background: none;
+  color: var(--text-light);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.default-meal-card {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-header h3 {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.meal-info {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.date-picker {
+  margin-bottom: var(--spacing-lg);
+}
+
+.date-picker label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-dark);
+}
+
+.date-picker input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background-color: var(--card-bg-color);
+}
+
+.member-meal-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.member-meal-card {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+}
+
+.member-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.total-meals {
+  color: var(--text-light);
+}
+
+.meal-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.meal-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.meal-input-group label {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.meal-input-group input {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .meal-inputs {
+    grid-template-columns: 1fr;
+  }
+  
+  .member-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .total-meals {
+    margin-top: var(--spacing-sm);
+  }
+}

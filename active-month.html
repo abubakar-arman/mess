@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Management Application</title>
+  <link rel="stylesheet" href="css/active-month/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <div class="logo">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+      </div>
+      
+      
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="sidebar-item">
+            <a href="dashboard.html" class="sidebar-link">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-user-plus"></i>
+              <span>Add Member</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-piggy-bank"></i>
+              <span>Add Deposit</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="add-meal.html" class="sidebar-link">
+              <i class="fas fa-utensils"></i>
+              <span>Add Meal</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-receipt"></i>
+              <span>Add Cost</span>
+            </a>
+          </li>
+          <li class="sidebar-item active">
+            <a href="active-month.html" class="sidebar-link">
+              <i class="fas fa-calendar"></i>
+              <span>Active Month Details</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="all-members.html" class="sidebar-link">
+              <i class="fas fa-users"></i>
+              <span>All Member</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fas fa-cog"></i>
+              <span>Options</span>
+              <i class="fas fa-chevron-down ml-auto"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="manager-section">
+        <div class="avatar">
+          <img src="https://i.pravatar.cc/150?img=12" alt="Manager">
+        </div>
+        <span class="manager-title">Manager</span>
+        <span class="manager-status">G</span>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation -->
+      <header class="top-navbar">
+        <div class="top-nav-icons">
+          <a href="#" class="top-nav-icon"><i class="fas fa-th"></i></a>
+          <a href="#" class="top-nav-icon"><i class="fas fa-home"></i></a>
+          <a href="#" class="top-nav-icon"><i class="fas fa-question-circle"></i></a>
+          <a href="#" class="top-nav-icon"><i class="fas fa-bell"></i></a>
+          <a href="#" class="top-nav-icon"><i class="fas fa-user"></i></a>
+        </div>
+
+        <div class="user-profile">
+          <span class="user-name">Arman</span>
+          <a href="profile.html">
+          <div class="avatar">
+            <img src="assets/profile.jpeg" alt="User Avatar">
+          </div>
+          </a>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <div class="page-content">
+        <div class="page-header">
+          <h1 class="page-title">Active Month Details</h1>
+          <button class="download-btn">Download Pdf</button>
+        </div>
+
+        <!-- Meal Details Table -->
+        <div class="meal-details">
+          <div class="table-header">
+            <div class="th meal">Meal</div>
+            <div class="th deposit">Deposit</div>
+            <div class="th meal-cost">Meal Cost</div>
+            <div class="th individual-cost">Individual Other Cost</div>
+            <div class="th shared-cost">Shared Other Cost</div>
+          </div>
+
+          <div class="table-body">
+            <div class="table-row">
+              <div class="td date">Date</div>
+              <div class="td name">Arman</div>
+            </div>
+
+            <div class="table-row">
+              <div class="td date">19 Feb</div>
+              <div class="td meal-details">
+                <div class="meal-item">Breakfast: 1.00</div>
+                <div class="meal-item">Lunch: 0.00</div>
+                <div class="meal-item">Dinner: 1.00</div>
+                <div class="meal-item total">Total: 2.00</div>
+                <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+              </div>
+            </div>
+
+            <div class="table-row">
+              <div class="td date">19 Feb</div>
+              <div class="td meal-details">
+                <div class="meal-item">Breakfast: 1.00</div>
+                <div class="meal-item">Lunch: 1.00</div>
+                <div class="meal-item">Dinner: 1.00</div>
+                <div class="meal-item total">Total: 3.00</div>
+                <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

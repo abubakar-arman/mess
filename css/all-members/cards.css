@@ -1,0 +1,207 @@
+/* Month Info Card */
+.month-info-card {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.month-info-card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-dark);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+}
+
+.info-item i {
+  margin-right: var(--spacing-md);
+  color: var(--text-light);
+  width: 20px;
+  text-align: center;
+}
+
+.info-item strong {
+  font-weight: 600;
+}
+
+.icon-link {
+  margin-left: var(--spacing-sm);
+  color: var(--primary-color);
+  transition: all var(--transition-speed);
+}
+
+.icon-link:hover {
+  color: var(--danger-color);
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.info-card {
+  flex: 1;
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-speed);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-icon {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  font-size: 1.2rem;
+}
+
+.card-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Card Colors */
+.info-card.blue {
+  background-color: var(--blue-card-bg);
+}
+
+.info-card.blue .card-value,
+.info-card.blue .card-icon {
+  color: var(--blue-card-color);
+}
+
+.info-card.green {
+  background-color: var(--green-card-bg);
+}
+
+.info-card.green .card-value,
+.info-card.green .card-icon {
+  color: var(--green-card-color);
+}
+
+.info-card.red {
+  background-color: var(--red-card-bg);
+}
+
+.info-card.red .card-value,
+.info-card.red .card-icon {
+  color: var(--red-card-color);
+}
+
+.info-card.yellow {
+  background-color: var(--yellow-card-bg);
+}
+
+.info-card.yellow .card-value,
+.info-card.yellow .card-icon {
+  color: var(--yellow-card-color);
+}
+
+/* Membership Banner */
+.membership-banner {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: all var(--transition-speed);
+  cursor: pointer;
+}
+
+.membership-banner:hover {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.membership-banner i {
+  font-size: 1.2rem;
+}
+
+/* Bazar Button */
+.bazar-button {
+  background-color: var(--card-bg-color);
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  box-shadow: var(--box-shadow);
+}
+
+.bazar-button:hover {
+  background-color: var(--background-color);
+}
+
+/* Member Cards */
+.member-count {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.member-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.member-card {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+.member-details {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.detail-col {
+  flex: 1;
+}
+
+.detail-col p {
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+}
+
+.detail-col strong {
+  font-weight: 600;
+}

@@ -1,0 +1,116 @@
+/* Main Layout */
+.app-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: var(--background-color);
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 var(--spacing-lg);
+  background-color: var(--card-bg-color);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-icons {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-md);
+  color: var(--text-light);
+  transition: all var(--transition-speed);
+}
+
+.nav-icon:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.user-profile-top {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-weight: 500;
+}
+
+.user-profile-top .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+.user-profile-top .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+.left-panel {
+  width: 35%;
+}
+
+.right-panel {
+  width: 65%;
+}
+
+/* Section Layout */
+.info-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-card, .member-card, .month-info-card {
+  animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --primary-color: #60048a;
+  --secondary-color: #3498db;
+  --accent-color: #2ecc71;
+  --warning-color: #f39c12;
+  --danger-color: #e74c3c;
+  
+  /* Background Colors */
+  --background-color: #f5f7fa;
+  --card-bg-color: #ffffff;
+  --sidebar-bg-color: #ffffff;
+  
+  /* Text Colors */
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+  --text-white: #ffffff;
+  
+  /* Card Colors */
+  --blue-card-bg: rgba(52, 152, 219, 0.1);
+  --green-card-bg: rgba(46, 204, 113, 0.1);
+  --red-card-bg: rgba(231, 76, 60, 0.1);
+  --yellow-card-bg: rgba(241, 196, 15, 0.1);
+  
+  --blue-card-color: #3498db;
+  --green-card-color: #2ecc71;
+  --red-card-color: #e74c3c;
+  --yellow-card-color: #f1c40f;
+  
+  /* Border Colors */
+  --border-color: #ecf0f1;
+  
+  /* Shadow */
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+}
