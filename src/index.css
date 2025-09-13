@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Custom styles */
+.card {
+  @apply transition-all duration-200;
+}
+
+.card:hover {
+  @apply shadow-lg;
+}
+
+.btn {
+  @apply transition-all duration-200;
+}
+
+.btn:hover {
+  @apply transform -translate-y-0.5;
+}
